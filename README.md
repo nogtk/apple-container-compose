@@ -16,26 +16,26 @@ Apple `container` は Apple silicon Mac と macOS 26 以降が前提です。
 リポジトリ内でそのまま呼び出す場合:
 
 ```bash
-swift run apple-container-compose up --dry-run
-swift run apple-container-compose up
-swift run apple-container-compose down
-swift run apple-container-compose config
+swift run ap-compose up --dry-run
+swift run ap-compose up
+swift run ap-compose down
+swift run ap-compose config
 ```
 
 インストール後は `swift run` なしで呼び出せます:
 
 ```bash
-apple-container-compose up --dry-run
-apple-container-compose up
-apple-container-compose down
-apple-container-compose config
+ap-compose up --dry-run
+ap-compose up
+ap-compose down
+ap-compose config
 ```
 
 別ファイルを使う場合:
 
 ```bash
-swift run apple-container-compose up -f compose.example.yaml --dry-run
-apple-container-compose up -f compose.example.yaml --dry-run
+swift run ap-compose up -f compose.example.yaml --dry-run
+ap-compose up -f compose.example.yaml --dry-run
 ```
 
 ## Install
@@ -44,13 +44,13 @@ apple-container-compose up -f compose.example.yaml --dry-run
 git clone https://github.com/nogtk/apple-container-compose.git
 cd apple-container-compose
 swift build -c release
-install -m 755 .build/release/apple-container-compose /usr/local/bin/apple-container-compose
+install -m 755 .build/release/ap-compose /usr/local/bin/ap-compose
 ```
 
 Apple silicon Mac で Homebrew の PATH に置きたい場合:
 
 ```bash
-install -m 755 .build/release/apple-container-compose /opt/homebrew/bin/apple-container-compose
+install -m 755 .build/release/ap-compose /opt/homebrew/bin/ap-compose
 ```
 
 ## YAML
