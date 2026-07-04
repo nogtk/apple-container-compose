@@ -14,16 +14,16 @@ Apple `container` は Apple silicon Mac と macOS 26 以降が前提です。
 ## Usage
 
 ```bash
-swift run apple-compose up --dry-run
-swift run apple-compose up
-swift run apple-compose down
-swift run apple-compose config
+swift run apple-container-compose up --dry-run
+swift run apple-container-compose up
+swift run apple-container-compose down
+swift run apple-container-compose config
 ```
 
 別ファイルを使う場合:
 
 ```bash
-swift run apple-compose up -f compose.example.yaml --dry-run
+swift run apple-container-compose up -f compose.example.yaml --dry-run
 ```
 
 ## YAML

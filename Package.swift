@@ -8,7 +8,7 @@ let package = Package(
         .macOS(.v14)
     ],
     products: [
-        .executable(name: "apple-compose", targets: ["AppleCompose"]),
+        .executable(name: "apple-container-compose", targets: ["AppleCompose"]),
         .library(name: "AppleComposeCore", targets: ["AppleComposeCore"])
     ],
     targets: [
